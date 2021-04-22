@@ -11,7 +11,7 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
   body, input, button {
-    font: 14px Roboto, sans-serif;
+    font: ${rem(14)} Roboto, sans-serif;
   }
   #root {
     margin: 0 auto;
@@ -34,16 +34,16 @@ export default createGlobalStyle`
     }
     .react-modal-content {
         width: 100%;
-        max-width: 450px;
+        max-width: ${rem(450)};
         background: #fff;
-        padding: 16px;
+        padding: ${rem(16)};
         position: relative;
-        border-radius: 4px;
+        border-radius: ${rem(4)};
     }
     .react-modal-close {
         position: absolute;
-        right: 16px;
-        top: 16px;
+        right: ${rem(16)};
+        top: ${rem(16)};
         border: 0;
         background: transparent;
         transition: filter 0.2s;
