@@ -24,17 +24,17 @@ function DetailsModal({ isOpen, onRequestClose, cityDetails }) {
         onClick={onRequestClose}
         className="react-modal-close"
       >
-        <img src={closeImg} alt="Close modal" />
+        <img src={closeImg} alt="Close modal" height={12} width={12} />
       </button>
       <CityName>{cityDetails.name}</CityName>
       <AllTempInfoWrapper>
         <TempWrapper>
           <Temp>{toCelsius(cityDetails.temp_min)}º C</Temp>
-          <TypeOfTemp>Minimum</TypeOfTemp>
+          <TypeOfTemp>Minimum temperature</TypeOfTemp>
         </TempWrapper>
         <TempWrapper>
           <Temp>{toCelsius(cityDetails.temp_max)}º C</Temp>
-          <TypeOfTemp>Maximum</TypeOfTemp>
+          <TypeOfTemp>Maximum temperature</TypeOfTemp>
         </TempWrapper>
       </AllTempInfoWrapper>
     </ReactModal>
