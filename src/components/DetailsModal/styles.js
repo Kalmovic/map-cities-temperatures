@@ -4,6 +4,7 @@ import { rem } from "../../utils/tools";
 export const CityName = styled.h2`
   text-align: center;
   font-size: ${rem(20)};
+  color: var(--text-color);
 `;
 export const AllTempInfoWrapper = styled.section`
   display: flex;
@@ -20,9 +21,11 @@ export const Temp = styled.h1`
   font-size: ${rem(45)};
   text-align: center;
   margin-bottom: ${rem(10)};
+  color: var(--text-color);
 `;
 
 export const TypeOfTemp = styled.h3`
   font-size: ${rem(16)};
   text-align: center;
+  color: var(--text-color);
 `;

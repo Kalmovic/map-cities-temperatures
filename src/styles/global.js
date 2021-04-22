@@ -2,6 +2,13 @@ import { createGlobalStyle } from "styled-components";
 import { rem } from "../utils/tools";
 
 export default createGlobalStyle`
+  :root {
+        --background: #FFFFFF;
+        --blue: #2f80ed;
+        --blue-light: #56ccf2;
+        --text-color: #363f5f;
+        --black: #000000;
+    }
   * {
     margin: 0;
     padding: 0;
@@ -36,15 +43,15 @@ export default createGlobalStyle`
     .react-modal-content {
         width: 100%;
         max-width: ${rem(450)};
-        background: #fff;
-        padding: ${rem(16)};
+        background: var(--background);
+        padding: ${rem(20)};
         position: relative;
         border-radius: ${rem(4)};
     }
     .react-modal-close {
         position: absolute;
-        right: ${rem(16)};
-        top: ${rem(16)};
+        right: ${rem(8)};
+        top: ${rem(8)};
         border: 0;
         background: transparent;
         transition: filter 0.2s;
