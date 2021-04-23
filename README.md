@@ -4,7 +4,7 @@ This is a code challenge!
 
 ## Configuration
 
-- Clone this repo and create a file `.env`
+- Clone this repo and create a file `.env` in the same level as the `package.json` file
 - Add to this file this global variable: REACT_APP_API_KEY=
 - [Register in openweather api website](https://home.openweathermap.org/users/sign_up "Register in openweather api website") to get your key and use it in the variable above.
 
